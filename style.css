@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b0f2f, #000);
+  transition: background 1s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  animation: fadeIn 1.2s ease;
+}
+
+.title {
+  font-size: 42px;
+  color: gold;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.highlight {
+  color: gold;
+  font-weight: bold;
+}
+
+.buttons button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid rgba(255,215,0,0.3);
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  background: gold;
+  color: black;
+}
+
+.output {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #ffd700;
+  min-height: 40px;
+  transition: 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
